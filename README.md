@@ -1,6 +1,6 @@
 # Machine Learning-Based Metabolic Cost Prediction
 
-## 📌 Overview
+##  Overview
 
 This project uses machine learning regression algorithms to predict metabolic cost during human walking using biomechanical measurements and walking-condition data.
 
@@ -8,7 +8,7 @@ The objective is to compare different regression models, evaluate their predicti
 
 The project also includes exploratory data analysis, visualizations, and feature-importance analysis to help understand the dataset and model predictions.
 
-## 🎯 Objectives
+## Objectives
 
 - Predict metabolic cost from walking-related measurements.
 - Compare five regression models.
@@ -17,7 +17,7 @@ The project also includes exploratory data analysis, visualizations, and feature
 - Analyse prediction errors using regression metrics.
 - Visualize actual versus predicted values and feature importance.
 
-## 🧠 Machine Learning Models
+##  Machine Learning Models
 
 The project evaluates the following five models:
 
@@ -48,7 +48,7 @@ The notebook evaluates four feature groups:
 
 The exact features included depend on the columns available in the prepared dataset.
 
-## ⚙️ Methodology
+##  Methodology
 
 The project follows these steps:
 
@@ -64,7 +64,7 @@ The project follows these steps:
 10. **Visualization:** Generate plots for model comparison, target distribution, correlation, actual versus predicted values, and feature importance.
 11. **Export:** Save evaluation tables, predictions, and feature-importance results.
 
-## 🔬 Evaluation Strategy
+##  Evaluation Strategy
 
 ### Leave-One-Subject-Out Cross-Validation (LOSO-CV)
 
@@ -91,7 +91,7 @@ RMSE is the primary metric used to select the best non-baseline configuration.
 
 **Note:** R² is not classification accuracy. It can be negative when a model performs worse than the mean-prediction baseline.
 
-## 📈 Visualizations
+##  Visualizations
 
 The notebook generates the following visualizations:
 
@@ -103,7 +103,7 @@ The notebook generates the following visualizations:
 
 These visualizations support model comparison and exploratory analysis.
 
-## 🛠️ Technologies Used
+##  Technologies Used
 
 - Python
 - Pandas
@@ -114,7 +114,7 @@ These visualizations support model comparison and exploratory analysis.
 - SciPy
 - Google Colab / Jupyter Notebook
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 
@@ -161,7 +161,7 @@ In Google Colab:
 4. Wait for preprocessing, cross-validation, model comparison, and plotting to finish.
 5. Download the generated results archive when prompted.
 
-## 📁 Expected Project Structure
+##  Expected Project Structure
 
 ```text
 metabolic-cost-ml/
@@ -179,7 +179,7 @@ metabolic-cost-ml/
 
 The results directory and CSV files are generated when the notebook runs successfully. They do not need to exist before execution.
 
-## 📦 Output Files
+## Output Files
 
 | File | Purpose |
 |---|---|
@@ -188,7 +188,7 @@ The results directory and CSV files are generated when the notebook runs success
 | `cross_validated_predictions.csv` | Stores actual and predicted values from cross-validation. |
 | `feature_importance.csv` | Stores feature-importance scores from Gradient Boosting. |
 
-## 🏆 Model Selection
+##  Model Selection
 
 The notebook compares all tested model–feature configurations and sorts them by RMSE.
 
@@ -196,7 +196,7 @@ The best non-baseline configuration is the one with the lowest RMSE among the te
 
 Actual performance values should be reported from the completed notebook execution rather than assumed in advance.
 
-## ⚠️ Limitations
+##  Limitations
 
 - Model performance depends on the dataset and the subjects represented.
 - Fixed hyperparameters may not provide the best possible performance.
@@ -204,7 +204,7 @@ Actual performance values should be reported from the completed notebook executi
 - An independent subject-level test set or nested cross-validation would provide stronger evidence of generalization.
 - Feature importance and correlation do not establish causation.
 
-## 🔮 Future Improvements
+##  Future Improvements
 
 - Tune hyperparameters using nested cross-validation.
 - Evaluate the final model on an independent group of subjects.
@@ -213,7 +213,7 @@ Actual performance values should be reported from the completed notebook executi
 - Investigate model interpretation methods such as permutation importance and SHAP.
 - Develop a simple interface for entering walking measurements and obtaining predictions.
 
-## 👥 Applications
+##  Applications
 
 Potential applications include:
 - Biomechanical data analysis.
@@ -223,11 +223,11 @@ Potential applications include:
 
 These are potential applications; the project does not by itself establish clinical validity.
 
-## 📄 License
+##  License
 
 Choose an appropriate open-source license before distributing this project. Ensure that the dataset's license permits redistribution before uploading the dataset to a public repository.
 
-## 🙏 Acknowledgements
+## Acknowledgements
 
 This project uses open-source Python libraries, including Pandas, NumPy, Matplotlib, Seaborn, SciPy, and Scikit-learn.
 
