@@ -29,7 +29,7 @@ The project evaluates the following five models:
 | Random Forest Regressor | Combines predictions from multiple decision trees. |
 | Gradient Boosting Regressor | Builds trees sequentially to improve predictions by correcting errors. |
 
-## 📊 Dataset
+##  Dataset
 
 The project uses a prepared CSV dataset containing walking-related measurements and metabolic-cost values.
 
